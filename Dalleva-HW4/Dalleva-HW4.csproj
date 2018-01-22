@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B4E642A-3611-4BA6-B35D-2627E8E4892B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dalleva_HW4</RootNamespace>
+    <AssemblyName>Dalleva-HW4</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Station">
+      <HintPath>..\..\..\..\..\Desktop\Station\Station\Station\bin\Debug\Station.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons8-Windows-8-Transport-Train.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\albertson.jpg" />
+    <Resource Include="Images\amagansett.jpg" />
+    <Resource Include="Images\amityville.jpg" />
+    <Resource Include="Images\atlanticterminal.jpg" />
+    <Resource Include="Images\auburndale.jpg" />
+    <Resource Include="Images\babylon.jpg" />
+    <Resource Include="Images\baldwin.jpg" />
+    <Resource Include="Images\bayshore.jpg" />
+    <Resource Include="Images\bayside.jpg" />
+    <Resource Include="Images\bellerose.jpg" />
+    <Resource Include="Images\bellmore.jpg" />
+    <Resource Include="Images\bellport.jpg" />
+    <Resource Include="Images\belmont.jpg" />
+    <Resource Include="Images\bethpage.jpg" />
+    <Resource Include="Images\brentwood.jpg" />
+    <Resource Include="Images\bridgehampton.jpg" />
+    <Resource Include="Images\broadway.jpg" />
+    <Resource Include="Images\carleplace.jpg" />
+    <Resource Include="Images\cedarhurst.jpg" />
+    <Resource Include="Images\centralislip.jpg" />
+    <Resource Include="Images\centreavenue.jpg" />
+    <Resource Include="Images\coldspringharbor.jpg" />
+    <Resource Include="Images\copiague.jpg" />
+    <Resource Include="Images\countrylifepress.jpg" />
+    <Resource Include="Images\deerpark.jpg" />
+    <Resource Include="Images\douglaston.jpg" />
+    <Resource Include="Images\easthampton.jpg" />
+    <Resource Include="Images\eastnewyork.jpg" />
+    <Resource Include="Images\eastrockaway.jpg" />
+    <Resource Include="Images\eastwilliston.jpg" />
+    <Resource Include="Images\farmingdale.jpg" />
+    <Resource Include="Images\farrockaway.jpg" />
+    <Resource Include="Images\floralpark.jpg" />
+    <Resource Include="Images\flushingmainstreet.jpg" />
+    <Resource Include="Images\foresthills.jpg" />
+    <Resource Include="Images\freeport.jpg" />
+    <Resource Include="Images\gardencity.jpg" />
+    <Resource Include="Images\gibson.jpg" />
+    <Resource Include="Images\glencove.jpg" />
+    <Resource Include="Images\glenhead.jpg" />
+    <Resource Include="Images\glenstreet.jpg" />
+    <Resource Include="Images\greatneck.jpg" />
+    <Resource Include="Images\greatriver.jpg" />
+    <Resource Include="Images\greenlawn.jpg" />
+    <Resource Include="Images\greenport.jpg" />
+    <Resource Include="Images\greenvale.jpg" />
+    <Resource Include="Images\hamptonbays.jpg" />
+    <Resource Include="Images\hempstead.jpg" />
+    <Resource Include="Images\hempsteadgardens.jpg" />
+    <Resource Include="Images\hewlett.jpg" />
+    <Resource Include="Images\hicksville.jpg" />
+    <Resource Include="Images\hollis.jpg" />
+    <Resource Include="Images\hunterspointavenue.jpg" />
+    <Resource Include="Images\huntington.jpg" />
+    <Resource Include="Images\inwood.jpg" />
+    <Resource Include="Images\islandpark.jpg" />
+    <Resource Include="Images\islip.jpg" />
+    <Resource Include="Images\jamaica.jpg" />
+    <Resource Include="Images\kewgardens.jpg" />
+    <Resource Include="Images\kingspark.jpg" />
+    <Resource Include="Images\lakeview.jpg" />
+    <Resource Include="Images\laurelton.jpg" />
+    <Resource Include="Images\lawrence.jpg" />
+    <Resource Include="Images\lindenhurst.jpg" />
+    <Resource Include="Images\littleneck.jpg" />
+    <Resource Include="Images\locustmanor.jpg" />
+    <Resource Include="Images\locustvalley.jpg" />
+    <Resource Include="Images\longbeach.jpg" />
+    <Resource Include="Images\longislandcity.jpg" />
+    <Resource Include="Images\lynbrook.jpg" />
+    <Resource Include="Images\malverne.jpg" />
+    <Resource Include="Images\manhasset.jpg" />
+    <Resource Include="Images\massapequa.jpg" />
+    <Resource Include="Images\massapequapark.jpg" />
+    <Resource Include="Images\masticshirley.jpg" />
+    <Resource Include="Images\mattituck.jpg" />
+    <Resource Include="Images\meadowlands.jpg" />
+    <Resource Include="Images\medford.jpg" />
+    <Resource Include="Images\merillonavenue.jpg" />
+    <Resource Include="Images\merrick.jpg" />
+    <Resource Include="Images\mets-willetspoint.jpg" />
+    <Resource Include="Images\mineola.jpg" />
+    <Resource Include="Images\montauk.jpg" />
+    <Resource Include="Images\murrayhill.jpg" />
+    <Resource Include="Images\nassauboulevard.jpg" />
+    <Resource Include="Images\newhydepark.jpg" />
+    <Resource Include="Images\northport.jpg" />
+    <Resource Include="Images\nostrandavenue.jpg" />
+    <Resource Include="Images\oakdale.jpg" />
+    <Resource Include="Images\oceanside.jpg" />
+    <Resource Include="Images\oysterbay.jpg" />
+    <Resource Include="Images\patchogue.jpg" />
+    <Resource Include="Images\pennstation.jpg" />
+    <Resource Include="Images\pinelawn.jpg" />
+    <Resource Include="Images\plandome.jpg" />
+    <Resource Include="Images\portjefferson.jpg" />
+    <Resource Include="Images\portwashington.jpg" />
+    <Resource Include="Images\queensvillage.jpg" />
+    <Resource Include="Images\riverhead.jpg" />
+    <Resource Include="Images\rockvillecentre.jpg" />
+    <Resource Include="Images\ronkonkoma.jpg" />
+    <Resource Include="Images\rosedale.jpg" />
+    <Resource Include="Images\roslyn.jpg" />
+    <Resource Include="Images\sayville.jpg" />
+    <Resource Include="Images\seacliff.jpg" />
+    <Resource Include="Images\seaford.jpg" />
+    <Resource Include="Images\smithtown.jpg" />
+    <Resource Include="Images\southampton.jpg" />
+    <Resource Include="Images\southold.jpg" />
+    <Resource Include="Images\speonk.jpg" />
+    <Resource Include="Images\stalbans.jpg" />
+    <Resource Include="Images\stewartmanor.jpg" />
+    <Resource Include="Images\stjames.jpg" />
+    <Resource Include="Images\stonybrook.jpg" />
+    <Resource Include="Images\syosset.jpg" />
+    <Resource Include="Images\valleystream.jpg" />
+    <Resource Include="Images\wantagh.jpg" />
+    <Resource Include="Images\westbury.jpg" />
+    <Resource Include="Images\westhampton.jpg" />
+    <Resource Include="Images\westhempstead.jpg" />
+    <Resource Include="Images\westwood.jpg" />
+    <Resource Include="Images\woodmere.jpg" />
+    <Resource Include="Images\woodside.jpg" />
+    <Resource Include="Images\wyandanch.jpg" />
+    <Resource Include="Images\yaphank.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
